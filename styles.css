@@ -2,6 +2,21 @@
     box-sizing: border-box;
 }
 
+legend {
+    font-size: 20px;
+}
+
+input {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.border:focus {
+    box-shadow: 0 0 10px orange;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -61,6 +76,11 @@ form {
     display: inline-block;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .text {
     color: white;
 }
@@ -76,8 +96,9 @@ input[type=submit] {
 }
 
 .name, .info, .password {
-    display: block;
+    display: flex;
     margin-bottom: 15px;
+    gap: 20px;
 }
 
 label {
@@ -92,8 +113,10 @@ section {
     font-size: 24px;
 }
 
-@media (max-width: 1000px) {
-    input, label {
-        display: block;
-    }
+a:link, a:active, a:visited {
+    color: orangered;
+}
+
+fieldset {
+    border: 2px solid orangered;
 }
