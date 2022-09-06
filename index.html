@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <title></title>
 </head>
 <body>
@@ -15,5 +16,34 @@
         <h1 class="title">Spooky</h1>
         <p class="credits">Photo by alisson christine on <a href="https://unsplash.com/photos/O27_16o-8Qs">Unsplash</a></p>
     </div>
+    <section>
+        <p class="text intro">This is not a real online service! Sign up <em>now</em> to get started</p>
+        <p class="text intro">You know you want it too</p>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <div class="name">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+                <div class="info">
+                    <label for="mail">EMAIL</label>
+                    <input type="email" id="mail" name="email">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="number" id="phone" name="phone">
+                </div>
+                <div class="password">
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" id="pwd" name="pwd">
+                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-pwd" name="confirm-pwd">
+                </div>
+                <input type="submit" value="Create Account">
+            </fieldset>
+        </form>
+        <p class="text">Already have an account? <a href="">Log in</a></p>
+    </section>
 </body>
 </html>
