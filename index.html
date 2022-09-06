@@ -17,28 +17,40 @@
         <p class="credits">Photo by alisson christine on <a href="https://unsplash.com/photos/O27_16o-8Qs">Unsplash</a></p>
     </div>
     <section>
-        <p class="text intro">This is not a real online service! Sign up <em>now</em> to get started</p>
-        <p class="text intro">You know you want it too</p>
+        <p class="text intro">This is not a real online service! Sign up <em>now</em> to get started.</p>
+        <p class="text intro">You know you want it too.</p>
         <form action="" method="post">
             <fieldset>
                 <legend>Let's do this!</legend>
                 <div class="name">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <div class="container">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name" class="border" required>
+                    </div>
+                    <div class="container">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" class="border" required>
+                    </div>
                 </div>
                 <div class="info">
-                    <label for="mail">EMAIL</label>
-                    <input type="email" id="mail" name="email">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="number" id="phone" name="phone">
+                    <div class="container">
+                        <label for="mail">EMAIL</label>
+                        <input type="email" id="mail" name="email" class="border" required>
+                    </div>
+                    <div class="container">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="text" id="phone" name="phone" class="border" required>
+                    </div>
                 </div>
                 <div class="password">
-                    <label for="pwd">PASSWORD</label>
-                    <input type="password" id="pwd" name="pwd">
-                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-pwd" name="confirm-pwd">
+                    <div class="container">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" id="pwd" name="pwd" class="error border" required>
+                    </div>
+                    <div class="container">
+                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-pwd" name="confirm-pwd" class="error border" required>
+                    </div>
                 </div>
                 <input type="submit" value="Create Account">
             </fieldset>
